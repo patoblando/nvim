@@ -29,8 +29,11 @@ vim.keymap.set({ 'n' }, '<leader>bd', ':BufferClose<Enter>')
 vim.keymap.set({ 'n' }, '<leader>bD', ':BufferClose!<Enter>')
 vim.keymap.set({ 'n' }, '<leader>bn', ':enew<Enter>')
 vim.keymap.set({ 'n' }, '<leader>sv', ':vsplit<CR>') --ver split + open next buffer
+vim.keymap.set({ 'n' }, '<leader>bt', ':term<Enter>')
 
 -- Misc
 vim.keymap.set({ 'n' }, '<leader>w', '<cmd>wa<Enter>') -- Write all
 vim.keymap.set({ 'n' }, '<leader>e', '<cmd>NvimTreeToggle<Enter>') -- Tree explorer
 vim.keymap.set({ 'n' }, '<leader>qq', '<cmd>qa<Enter>') -- Quit neovim
+vim.keymap.set({ 'v' }, '<leader>c', '"+y<Enter>') -- Yank into clipboard
+
